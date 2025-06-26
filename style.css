@@ -551,6 +551,26 @@ article {
   flex-direction: column;
   justify-content: center;
 }
+
+
+/* projects */
+
+.experience-skills-wrapper1 {
+  display: flex;
+  flex-wrap: wrap;         /* Allow wrapping to next row */
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Make each project card take ~30% of container (3 per row) */
+.details-container1.color-container {
+  flex: 1 1 calc(33.33% - 2rem);  /* 3 in a row minus gap */
+  max-width: calc(33.33% - 2rem);
+  box-sizing: border-box;
+}
+
+
 @media (max-width: 768px) {
   .skill-slide {
   width: 25%;
@@ -582,5 +602,8 @@ article {
   section {
     margin: 0 1rem; /* Add side padding to the whole section */
   }
+    .details-container1.color-container {
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
