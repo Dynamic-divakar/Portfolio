@@ -58,7 +58,7 @@ Welcome to my personal developer portfolio website built using **HTML**, **CSS**
 ## ✨ How to Run Locally
 
 1. Clone the repo  
-   `git clone https://github.com/yourusername/portfolio-website.git`
+   `git clone https://github.com/Dynamic-divakar/Portfolio.git`
 
 2. Open `index.html` in your browser  
    `Right click → Open with Live Server` *(or)* open manually.
