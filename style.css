@@ -552,7 +552,6 @@ article {
   justify-content: center;
 }
 
-
 /* projects */
 
 .experience-skills-wrapper1 {
@@ -571,6 +570,8 @@ article {
 }
 
 
+
+/* for mobile */
 @media (max-width: 768px) {
   .skill-slide {
   width: 25%;
@@ -602,8 +603,28 @@ article {
   section {
     margin: 0 1rem; /* Add side padding to the whole section */
   }
-    .details-container1.color-container {
+  .details-container1.color-container {
   flex: 1 1 100%;
   max-width: 100%;
 }
+}
+.details-containerx:hover {
+  background: rgb(53, 53, 53); 
+  border: rgb(53, 53, 53) 0.1rem solid; /* Light gray background */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 
+.details-containerx:hover h3,
+.details-containerx:hover p {
+  color: #ffffff;  /* Text becomes black */
+  transition: color 0.3s ease;
+}
+
+.details-containerx a {
+  text-decoration: none;
+  color: inherit;  /* Inherit text color from container */
+  display: block;  /* Make the whole card clickable */
+  height: 100%;
+  width: 100%;
+}
