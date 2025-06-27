@@ -23,6 +23,7 @@ Welcome to my personal developer portfolio website built using **HTML**, **CSS**
 .
 ├── index.html
 ├── style.css
+├── script.js
 ├── /assets
 │   ├── project-1.png
 │   ├── project-2.png
