@@ -649,7 +649,9 @@ article {
 }
 
 
+
 .project-card {
+  aspect-ratio: 2 / 3;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -699,3 +701,26 @@ article {
   height: 100%;
 }
 
+
+/* Target half-width laptop windows */
+@media (max-width: 960px) {
+  /* Styles for half-screen or smaller */
+   .project-card {
+  aspect-ratio: 1/1.2; /* or 1 / 1 for square */
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+    .project-card {
+    height: 100%; /* smaller for mobile */
+  }
+    .card-front,
+  .card-back {
+    padding: 1rem;
+  }
+  .project-title {
+    font-size: 1rem;
+    font-size: 2rem;
+  }
+}
