@@ -573,6 +573,25 @@ article {
 
 /* for mobile */
 @media (max-width: 768px) {
+
+  .project-card {
+  aspect-ratio: 2 / 2.6; /* or 1 / 1 for square */
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+    .project-card {
+    height: 100%; /* smaller for mobile */
+  }
+    .card-front,
+  .card-back {
+    padding: 1rem;
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  
   .skill-slide {
   width: 25%;
   flex-shrink: 0;
@@ -628,3 +647,55 @@ article {
   height: 100%;
   width: 100%;
 }
+
+
+.project-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.project-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card-front {
+  background: #fafafa;
+}
+
+.card-back {
+  background: rgb(53, 53, 53);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-inner,
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+}
+
