@@ -682,7 +682,7 @@ article {
 }
 
 .card-back {
-  background: rgb(53, 53, 53);
+  background: #F0DFC3;
   color: white;
   transform: rotateY(180deg);
   display: flex;
