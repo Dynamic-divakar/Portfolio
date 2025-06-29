@@ -724,3 +724,26 @@ article {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 450px) {
+
+  /* Styles for small mobile screens */
+   .project-card {
+  aspect-ratio: 2/2.7; /* or 1 / 1 for square */
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+    .project-card {
+    height: 100%; /* smaller for mobile */
+  }
+    .card-front,
+  .card-back {
+    padding: 1rem;
+  }
+  .project-title {
+    font-size: 1rem;
+
+  }
+}
